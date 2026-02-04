@@ -1,0 +1,42 @@
+body {
+  background-image: url("Default.jpg");
+  color: azure;
+  text-align: center;
+}
+.body_a {
+  font-family: inherit;
+  font-size: xx-large;
+  font-style: italic;
+}
+#abcd{
+    font-size: 30px;
+
+}
+#options{
+    height: 35px;
+    width: 110px;
+    border-radius: 5px;
+    border-color: darkgrey;
+}
+#options:hover{
+    cursor: pointer;
+}
+#recipeName{
+    text-decoration: underline;
+    font-family: serif;
+    font-size: 60px;
+    text-underline-offset: 7px;
+    text-shadow: 2px 2px 5px #d0c7c7;
+    padding-bottom: 20px;
+}
+#btn{
+    height: 30px;
+    font-size: 15px;
+    border-color: rgb(190, 19, 19);
+    color: azure;
+    background-color: black;
+}
+#btn:hover{
+    background-color: white;
+    color: black;
+}

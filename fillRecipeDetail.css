@@ -1,0 +1,248 @@
+/* ---------------- TOP BUTTONS (OLD STYLE RESTORED) ---------------- */
+
+.top-buttons {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.top-buttons button {
+    padding: 10px 28px;
+    font-size: 18px;
+    margin: 0 10px;
+    border: 2px solid #444;
+    background: #e6e6e6;
+    cursor: pointer;
+    border-radius: 6px;
+    font-weight: 700;
+    transition: 0.2s;
+}
+
+.top-buttons button:hover {
+    background: #d5d5d5;
+    transform: scale(1.05);
+}
+
+/* ---------------- GRID SHARED BETWEEN VIEW + EDIT ---------------- */
+
+.grid-wrapper {
+    width: 98%;
+    margin: auto;
+    overflow-x: auto;
+    border: 3px solid #ccc;
+}
+
+.grid-view,
+.grid {
+    display: grid;
+    width: max-content;
+    padding: 15px;
+    gap: 10px;
+}
+
+/* Step Cells */
+.step-cell {
+    background: #fff6d7;
+    padding: 10px 15px;
+    border: 2px solid #999;
+    font-weight: bold;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* Column Headers */
+.col-header {
+    padding: 15px;
+    border: 3px solid #900;
+    background: #fff5f5;
+    color: red;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+/* Non-editable Cells */
+.cell {
+    padding: 10px;
+    border: 2px solid #777;
+    width: 160px;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+/* Editable Grid (fill page) */
+.grid-wrapper {
+    display: inline-block;
+    max-width: 100%;
+    overflow-x: auto;
+    border: 3px solid #bbb;
+    background: white;
+    box-sizing: border-box;
+}
+
+.grid {
+    display: grid;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    background: white;
+    width: max-content;
+    grid-auto-columns: 200px;   /* SMALLER CELL SIZE */
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.15);
+}
+
+.column-header,
+.row-header {
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 0;
+    background-color: #e4dede;
+    border: 2px solid #aaa;
+}
+
+/* Input Cells */
+.input-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[type="text"] {
+    width: 95%;
+    padding: 8px;
+    font-size: 15px;
+    border: 2px solid #999;
+    border-radius: 4px;
+    background: white;
+    transition: 0.2s ease;
+    text-align: center;
+}
+
+input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+    outline: none;
+}
+
+/* Header Inputs */
+.col-header-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+}
+
+.col-header-input input {
+    width: 95%;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: red;
+    background: #faf5f5;
+    border: 3px solid #131212;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(196, 69, 69, 0.4);
+    transition: 0.2s ease;
+}
+
+.col-header-input input:focus {
+    border-color: #ff0000;
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+    background: #ffeaea;
+}
+
+/* Submit buttons */
+.submit-btn {
+    margin-top: 30px;
+    padding: 12px 35px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: blur(0.6px);
+    transition: 0.2s ease;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+    filter: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+.back-btn {
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    filter: blur(0.4px);
+    transition: 0.2s ease;
+}
+
+.back-btn:hover {
+    background-color: #0056b3;
+    filter: none;
+    box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+}
+
+/* Heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 32px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-shadow: 1px 1px 5px rgba(38, 29, 29, 0.4);
+    margin-top: 10px;
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.toolbar {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.toolbar button {
+  padding: 8px 16px;
+  background: #5a5a5a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.toolbar button:hover {
+  background: #3a3a3a;
+}
+
+.toolbar button:active {
+  background: #000;
+}
+
+.toolbar button:focus {
+  outline: 2px solid #007bff;
+}

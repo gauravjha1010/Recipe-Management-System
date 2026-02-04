@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+}
+
+#recipeDetails {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+#detailsContainer ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#detailsContainer li {
+    margin: 5px 0;
+}
+.grid-wrapper {
+    display: inline-block;
+    overflow-x: auto;
+    border: 3px solid #bbb;
+    background: white;
+    padding: 20px;
+}
+
+.grid-view {
+    display: grid;
+    width: max-content;
+    grid-auto-columns: 220px;
+    gap: 10px;
+}
+
+.col-header {
+    padding: 12px;
+    background: #faf5f5;
+    border: 3px solid #131212;
+    font-weight: 700;
+    text-align: center;
+}
+
+.cell {
+    padding: 8px;
+    border: 2px solid #999;
+    text-align: center;
+    background: #fff;
+}
+
+.edit-btn {
+    margin-top: 20px;
+    padding: 10px 25px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    display: block;
+}
+

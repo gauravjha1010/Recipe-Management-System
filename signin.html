@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGNIN_Page</title>
+
+    <style>
+      body {
+        font-family: Arial;
+        background-color: antiquewhite;
+        color: black;
+      }
+
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 10px 40px 10px 10px; /* space for eye icon */
+        margin-bottom: 20px;
+        border: 2px solid #7c7e81;
+        border-radius: 6px;
+        outline: none;
+        transition: all 0.3s ease;
+        box-sizing: border-box;
+      }
+
+      input[type="text"]:focus,
+      input[type="password"]:focus {
+        border-color: #d8dee3;
+        box-shadow: 0 0 8px rgba(53, 122, 184, 0.5);
+      }
+
+      input[type="submit"] {
+        width: 15%;
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #357ab8;
+        transform: scale(1.05);
+      }
+
+      /* 🔹 Wrapper for password + eye icon */
+      .password-wrapper {
+        position: relative;
+        width: 30%;
+        margin-left: 35%;
+      }
+
+      .password-wrapper img {
+        position: absolute;
+        right: 10px;
+        top: 33%;
+        width: 20px;
+        cursor: pointer;
+        transform: translateY(-50%);
+      }
+
+      .input-box {
+        width: 30%;
+        margin-left: 35%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <br /><br /><br /><br />
+    <h1 style="text-align: center">SIGN-IN</h1>
+    <br /><br /><br /><br />
+
+    <form class="signinform" action="form.php" method="post" id="signinForm">
+
+      <!-- Username -->
+      <div class="input-box">
+        <input type="text" name="username" placeholder="Username" />
+      </div>
+
+      <!-- Password with eye icon -->
+      <div class="password-wrapper">
+        <input
+          type="password"
+          name="password"
+          id="password"
+          placeholder="Password"
+        />
+
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/159/159604.png"
+          id="eyeIcon"
+          onclick="togglePassword()"
+          alt="Toggle password"
+        />
+      </div>
+
+      <br />
+
+      <input type="submit" value="Submit" style="margin-left: 44%" />
+    </form>
+
+    <p style="margin-left: 42%">
+      Not Registered ?
+      <a href="signup.html">Create Account</a>
+    </p>
+
+    <script src="signin.js"></script>
+  </body>
+</html>

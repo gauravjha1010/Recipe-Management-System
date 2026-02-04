@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SIGNUP_Page</title>
+    <style>
+      body {
+        font-family: Arial;
+        background-color: antiquewhite;
+      }
+
+      input[type="text"],
+      input[type="email"],
+      input[type="password"] {
+        width: 30%;
+        padding: 10px;
+        margin-bottom: 20px;
+        display: block;
+        margin-left: 35%;
+        box-sizing: border-box;
+      }
+
+      label {
+        display: block;
+        margin-left: 35%;
+        margin-bottom: 5px;
+      }
+
+      input[type="submit"] {
+        width: 15%;
+        padding: 10px 15px;
+        font-size: 16px;
+        background-color: #4a90e2;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease;
+        margin-left: 44%;
+      }
+
+      input[type="submit"]:hover {
+        background-color: #357ab8;
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">SIGN-UP</h1>
+    <form id="signupForm">
+      <label for="username">Enter Username</label>
+      <input type="text" name="username" />
+
+      <label for="email">Enter Email</label>
+      <input type="email" name="email" />
+
+      <label for="password1">Create Password</label>
+      <input type="password" name="password1" placeholder="Eg.: Abc@12" />
+
+      <label for="password2">Re-enter Password</label>
+      <input type="password" name="password2" />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="signup.js"></script>
+  </body>
+</html>

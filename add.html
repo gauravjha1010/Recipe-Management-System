@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Add</title>
+    <link rel="stylesheet" href="add.css" />
+  </head>
+  <body>
+    <h1 id="head-name">Fill Recipe Details</h1>
+    <form id="recipeForm">
+      <h1>Add New Recipe</h1>
+
+      <label for="recipeName"><strong>Recipe Name:</strong></label>
+
+      <input
+        type="text"
+        id="recipeName"
+        name="recipeName"
+        required
+        style="width: 60%; margin-bottom: 20px; padding: 10px"
+      />
+      <label for="recipeId"><strong>Recipe Id:</strong></label>
+
+      <input
+        type="text"
+        id="recipeId"
+        name="recipeId"
+        required
+        style="width: 30%; margin-bottom: 20px; padding: 10px"
+      />
+
+      <button type="button" id="addIngredientBtn"> ➕ Add Procedure</button>
+      <a href="get.html" id="getPage">GetRecipeDetail</a>
+    </form>
+    
+    <script src="add.js"></script>
+  </body>
+</html>

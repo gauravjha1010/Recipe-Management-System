@@ -1,0 +1,28 @@
+{
+  "demo@123": {
+    "name": "Demo",
+    "details": [
+      [
+        "state",
+        "Ingrediants",
+        "Quantity",
+        "Speed",
+        "Time"
+      ],
+      [
+        "Off",
+        "Water",
+        "100ml",
+        "20rpm",
+        "2min."
+      ],
+      [
+        "On",
+        "Soil",
+        "250g",
+        "50rpm",
+        "5min."
+      ]
+    ]
+  }
+}

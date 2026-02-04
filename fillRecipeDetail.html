@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill Recipe Details</title>
+    <link rel="stylesheet" href="fillRecipeDetail.css">
+</head>
+<body>
+
+<h2 class="title">Fill Recipe Details</h2>
+
+<div class="toolbar">
+    <button id="addRowBtn">+ Add Row</button>
+    <button id="removeRowBtn">– Remove Row</button>
+    <button id="addColBtn">+ Add Column</button>
+    <button id="removeColBtn">– Remove Column</button>
+</div>
+
+
+<form id="recipeForm">
+    <div class="grid-wrapper">
+        <div id="dynamicGrid" class="grid"></div>
+    </div>
+
+    <!-- NEW BUTTON SECTION -->
+    <div id="editButtons" class="dual-buttons" style="display:none;">
+        <button type="button" id="replaceOldBtn" class="submit-btn">Replace Old Recipe</button>
+        <button type="button" id="saveNewBtn" class="submit-btn blue-btn">Save as New Recipe</button>
+    </div>
+
+    <!-- OLD BUTTON (ONLY FOR NEW RECIPE) -->
+    <button id="saveDetailBtn" type="submit" class="submit-btn">Save Detail</button>
+
+    <button id="goBackBtn" type="button" class="back-btn">Go Back</button>
+</form>
+
+<script src="fillRecipeDetail.js"></script>
+
+</body>
+</html>
